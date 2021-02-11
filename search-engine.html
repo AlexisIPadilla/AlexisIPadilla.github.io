@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Alexis Padilla
+EMAIL: aipadill@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alexis Padilla">
+  <meta name="description" content="Details on the Project: Search Engine">
+  <link rel="stylesheet" href="styles.css"/>
+   <!-- you would also link to Bootstrap here! -->
+  <title>Search Engine</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About</a></li>
+        <li><a href="withered-away.html">Withered Away</a></li>
+        <li class="selected">Search Engine</li>
+        <li><a href="interactive-world.html">Interactive World</a></li>
+      </ul>
+    </nav>
+    <div class="name">
+      <h1>Search Engine</h1>
+    </div>
+  </header>
+  <div class="page">
+    <article class="content">
+      <img src="images/search-engine.png" alt="Search Engine Interface." style="max-width: 500px"/>
+      <h2>Project Description</h2>
+      <p>
+        In our Informatics 141 class, we were tasked to create a search engine that
+        can handle over 50,000 pages in short amount of time. Our group worked on
+        both the Web Crawler and the Search Engine interface.
+      </p>
+      <p>
+        In short, we wrote a search engine from the ground up that is capable of
+        handling tens of thousands of documnets or Web pages, under harsh
+        operational constriants and having a query response time under 300ms.
+        This was our work process handling it.
+      </p>
+      <p>
+        Our team created a program that provided an inverted index for our search
+        engine. The program created the index, where each word is which document
+        and their importance to the documnet; the offset, where each word is
+        positioned in the index text to save time when searching; and the docid map,
+        where the index number corresponds to the actual web link or document.
+      </p>
+      <p>
+        After creating our important files, we moved on to the search engine.
+        After entering the search queary, it gets split up into keywords and
+        searched for in the offset. Once the index positions are found, it skips
+        reading the whole index document until it reaches the line that matters.
+        After finding the approiate numbers and ranking them after our calculation,
+        we get the top 5 results in our page.
+      </p>
+    </article>
+  </div>
+</body>
+</html>
